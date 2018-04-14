@@ -25,6 +25,7 @@ function doWhileLoop(array) {
   }
 
   do {
-  while (n < 15) {
-    love.push(array[i])
-  }
+    array.pop();
+  } while (array.length > -1 && maybeTrue());
+    return array;
+}
